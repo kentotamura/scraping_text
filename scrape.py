@@ -40,7 +40,7 @@ for emoji in emojis:
 
 # 絵文字のリストの中から絵文字をFor文で１要素づつord関数で文字コード化する
 for emoji in emoji_list:
-    if len(emoji) < 2:
+    if len(emoji) < 2 and emoji != '':
         code_point = hex(ord(emoji))
         point_list.append(code_point)
 
